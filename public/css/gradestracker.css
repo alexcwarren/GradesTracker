@@ -56,3 +56,9 @@ body {
 .hidden {
     display: none;
 }
+.valid {
+    color: green;
+}
+.invalid {
+    color: red;
+}

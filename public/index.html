@@ -35,6 +35,15 @@
         <input type="password" id="inputNewPassword" class="form-control" placeholder="Password" required>
         <label for="confirmPassword" class="sr-only">Confirm password</label>
         <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm password" required>
+        <div id="password-message" class="text-left hidden">
+          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+          <p id="number" class="invalid">A <b>number</b></p>
+          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
+        <div id="confirm-password-message" class="text-left hidden">
+          <p id="match-password" class="invalid">Passwords <b>match</b></p>
+        </div>
       </div>
 
       <button id="button-signin" class="btn btn-lg btn-primary btn-block" type="button" onclick="showSignIn()">Sign In</button>
