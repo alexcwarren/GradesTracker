@@ -19,7 +19,7 @@
     <form id="signin-form" class="form-signin">
       <h1>Grades Tracker</h1>
 
-      <div id="div-signin" class="div-sign">
+      <div id="div-signin" class="div-sign hidden">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
@@ -27,7 +27,7 @@
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
       </div>
 
-      <div id="div-signup"  class="div-sign">
+      <div id="div-signup"  class="div-sign hidden">
         <h1 class="h3 mb-3 font-weight-normal">Create account</h1>
         <label for="inputNewEmail" class="sr-only">Email address</label>
         <input type="email" id="inputNewEmail" class="form-control" placeholder="Email address" required autofocus>
@@ -39,6 +39,7 @@
 
       <button id="button-signin" class="btn btn-lg btn-primary btn-block" type="button" onclick="showSignIn()">Sign In</button>
       <button id="button-signup" class="btn btn-lg btn-primary btn-block" type="button" onclick="showSignUp()">Sign Up</button>
+      <a id="back-link" href="index.html" class="hidden">< Back</a>
     </form>
 
     <script src="js/signin.js"></script>
